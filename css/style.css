@@ -1,0 +1,46 @@
+:root {
+    --main-color: #2B4074;
+}
+
+/* Desctop HD version */
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1450px) {
+    .container {
+        width: 1024px;
+    }
+}
+
+
+
+/* Tablet Portrait version */
+@media only screen and (max-width: 1026px) {
+    .container {
+        width: 768px;
+    }
+   }
+
+
+/* Portrait version */
+@media only screen and (max-width: 770px) {
+    .container {
+        width: 640px;
+    }
+}
+
+
+/* Mobile Portrait version */
+@media only screen and (max-width: 642px) {
+    .container {
+        width: 320px;
+    }
+
+}
+
+
+

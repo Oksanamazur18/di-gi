@@ -1,0 +1,260 @@
+footer {
+    width: 100%;
+    height: 639px;
+    box-sizing: border-box;
+    padding: 150px;
+    background-color: var(--main-color);
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.request {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.socials {
+    margin: 80px 0;
+    display: flex;
+}
+
+.network {
+    width: 285px;
+    height: 63px;
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 63px;
+    text-align: center;
+    border-top: 1px solid #7EBF84;
+    border-bottom: 1px solid #7EBF84;
+}
+
+.google {
+    border-left: 1px solid #7EBF84;
+    border-right: 1px solid #7EBF84;
+}
+
+.twitter {
+    border-right: 1px solid #7EBF84;
+}
+
+.widjets {
+    display: flex;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.widjet {
+    width: 287px;
+}
+
+.widjets h4 {
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #F9F6E5;
+}
+
+.widjet a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer::before {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    background-color: var(--main-color);
+    content: url(..//images/logo.svg);
+    place-content: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: absolute;
+    top: -30px;
+    left: 605px;
+}
+
+/*  Section "up"  */
+.up_wrapper {
+    width: 100%;
+    height: 42px;
+    background-color: #F9F6E5;
+    box-sizing: border-box;
+    padding-right: 146px;
+    text-align: right;
+
+}
+
+.up_wrapper a {
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+@media only screen and (max-width: 1450px) {
+    footer::before {
+        left: 398px;
+    }
+
+    footer {
+        padding: 156px 43px 90px;
+    }
+
+    .request {
+        font-size: 36px;
+    }
+
+    .widjets h4 {
+        font-size: 18px;
+    }
+
+    .widjets {
+        font-size: 16px;
+    }
+
+    .socials {
+        margin-bottom: 57px;
+    }
+
+    .widjets p {
+        margin: 0;
+    }
+
+    .up_wrapper {
+        padding: 0 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1026px) {
+    footer::before {
+        left: 271px;
+    }
+
+    footer {
+        height: 632px;
+        padding: 114px 35px 0 45px;
+    }
+
+    .request {
+        font-size: 32px;
+    }
+
+    .network {
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .socials {
+        margin: 40px 0 69px;
+    }
+
+    .widjets h4 {
+        margin: 0 0 21px 0;
+    }
+
+    .widjets {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .widjet {
+        width: 40%;
+        margin-bottom: 35px;
+    }
+
+}
+
+
+@media only screen and (max-width: 770px) {
+    footer::before {
+        left: 205px;
+    }
+
+    .request {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .network {
+        height: 57px;
+        line-height: 57px;
+    }
+
+    .socials {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 642px) {
+
+    footer::before {
+        left: 45px;
+    }
+
+    footer {
+        height: 954px;
+    }
+
+    .request {
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .socials {
+        width: 27px;
+        margin: 43px auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .network {
+        width: 27px;
+        height: 35px;
+        line-height: 27px;
+        border: none;
+    }
+
+    .widjets h4 {
+        text-align: center;
+    }
+
+    .widjet {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .up_wrapper {
+        height: 142px;
+        box-sizing: border-box;
+        padding: 56px 20px 23px;
+        text-align: center;
+    }
+
+    .up_wrapper a {
+        text-align: center;
+    }
+
+}

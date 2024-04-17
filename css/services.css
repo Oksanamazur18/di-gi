@@ -1,0 +1,329 @@
+.services_wrapper {
+    width: 100%;
+    height: 546px;
+    display: flex;
+}
+
+.services_content {
+    width: 515.61px;
+    box-sizing: border-box;
+    padding: 50px 60px 0 62px;
+}
+
+.title_services {
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56.25px;
+    text-align: left;
+    color: var(--main-color);
+}
+
+.service_descripion {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #4A4A4A;
+}
+
+hr {
+    width: 98.74px;
+    height: 8px;
+    background-color: var(--main-color);
+    margin: 6px 0 0;
+
+}
+
+.service_idea {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #797979;
+    margin-top: 34px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 230.25px 230.25px 230.25px 230.25px;
+}
+
+.service {
+    width: 230.25px;
+    box-sizing: border-box;
+    border-left: 1px solid rgb(233, 230, 230);
+    border-bottom: 1px solid rgb(233, 230, 230);
+}
+
+
+
+.service:hover .image {
+    margin: 25px auto 28px;
+    transition: all linear 0, 5s;
+}
+
+.service:hover .service_border {
+    border: 4px solid #2b4074;
+    transition: all linear 1s;
+}
+
+.service:hover .more {
+    display: block;
+    transition: all linear 1s;
+}
+
+.service:hover .services_additional {
+    display: block;
+    transition: all linear 1s;
+}
+
+
+.image {
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-position: center;
+    margin: 78px auto 28px;
+}
+
+.strategy {
+    background-image: url(../images/strategy.png);
+    background-size: 154%;
+    background-position: top;
+}
+
+.analysis {
+    background-image: url(../images/analysis.png);
+}
+
+.social {
+    background-image: url(../images/social.png);
+}
+
+.development {
+    background-image: url(../images/development.png);
+    background-size: 154%;
+    background-position: -4ch top;
+}
+
+.content {
+    background-image: url(../images/content.png);
+    background-size: 197%;
+    background-position: -8ch top;
+}
+
+.design {
+    background-image: url(../images/design.png);
+}
+
+.target {
+    background-image: url(../images/target.png);
+    background-size: 203%;
+    background-position: -8ch top;
+}
+
+.product {
+    background-image: url(../images/product.png);
+    background-size: 147%;
+    background-position: -2ch top;
+}
+
+.meaning {
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.service_border {
+    width: 212px;
+    height: 250px;
+    border: 4px solid #2b407400;
+    margin: 6px auto;
+}
+
+.services_additional {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color: #9B9B9B;
+    display: none;
+}
+
+.more {
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--main-color);
+    text-decoration: none;
+    margin: 0 39px;
+    display: none;
+}
+
+
+@media only screen and (max-width: 1450px) {
+    .services_wrapper {
+        height: 912px;
+        flex-wrap: wrap;
+    }
+
+    .services_content {
+        width: 100%;
+        padding: 52px 46px 0;
+    }
+
+    .title_services {
+        text-align: center;
+        margin: 0;
+    }
+
+    .services {
+        grid-template-columns: 256px 256px 256px 256px;
+    }
+
+    .service {
+        width: 256px;
+        box-sizing: border-box;
+        border: 1px solid rgb(233, 230, 230);
+    }
+
+    .service_border {
+        width: 222px;
+        height: 255px;
+        margin-top: 22px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1026px) {
+    .services {
+        grid-template-columns: 384px 384px;
+    }
+
+    .service {
+        width: 384px;
+        height: 337px;
+    }
+
+    .services_wrapper {
+        height: 1640px;
+    }
+
+    .service_border {
+        width: 331px;
+        height: 288px;
+    }
+
+    .services_additional {
+        margin: 30px 0;
+        font-weight: 400;
+    }
+
+}
+
+@media only screen and (max-width: 770px) {
+    .services_content {
+        padding: 24px 40px 0;
+    }
+
+    .service_descripion {
+        text-align: center;
+    }
+
+    .service_hr {
+        margin: 30px auto;
+    }
+
+    .service_idea {
+        text-align: center;
+    }
+
+    .services {
+        grid-template-columns: 320px 320px;
+    }
+
+    .service {
+        width: 320px;
+        height: 315px;
+    }
+
+    .service_border {
+        width: 287px;
+        height: 282px;
+        margin-top: 12px;
+    }
+
+    .services_wrapper {
+        height: 1556px;
+    }
+
+}
+
+@media only screen and (max-width: 642px) {
+    .services_wrapper {
+        box-sizing: border-box;
+        padding: 25px 20px 0;
+        position: relative;
+        height: 2796px;
+
+    }
+
+    .services_content {
+        padding: 0;
+    }
+
+    .title_services {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.13px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 101px;
+    }
+
+    .service_hr {
+        position: absolute;
+        top: 2%;
+        left: 34%;
+    }
+
+    .service_descripion {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .service_idea {
+        font-size: 15px;
+        line-height: 17px;
+        margin-top: 40px;
+    }
+
+    .services {
+        grid-template-columns: 280px;
+    }
+
+    .service {
+        width: 280px;
+        height: 311px;
+        box-sizing: border-box;
+    }
+
+    .service_border {
+        width: 246px;
+        height: 277px;
+    }
+}
+
+
